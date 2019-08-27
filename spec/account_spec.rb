@@ -20,7 +20,13 @@ describe Account do
       it "should allow client to withdrawal money from their account" do
         account.deposit(100)
         account.withdrawal(50)
-        expect(account.balance).to eq(50) 
+        expect(account.balance).to eq(50)
+      end
+    end
+
+    describe "#Insufficent_funds" do
+      it "raises an error if balance is below 0" do
+        expect{ account.withdrawal(10) }.to raise_error 'Balance is insufficient for a withdrawal'
       end
     end
   end

@@ -12,6 +12,7 @@ attr_reader :balance
   end
 
   def withdrawal(amount)
+    raise 'Balance is insufficient for a withdrawal' if amount > @balance
     @balance -= amount
   end
 

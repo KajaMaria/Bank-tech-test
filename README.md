@@ -16,3 +16,13 @@ date || credit || debit || balance
 14/01/2012 || || 500.00 || 2500.00
 13/01/2012 || 2000.00 || || 3000.00
 10/01/2012 || 1000.00 || || 1000.00
+
+classes
+
+Account - main class
+add minimum balance 
+Transaction - Add time stamp
+Bank_Statment - format for my bank slip
+
+
+Time.new.strftime("%d/%m/%Y")
