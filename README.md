@@ -20,9 +20,6 @@ date || credit || debit || balance
 classes
 
 Account - main class
-add minimum balance 
-Transaction - Add time stamp
+add minimum balance
+Transaction - Add time stamp Time.new.strftime("%d/%m/%Y")
 Bank_Statment - format for my bank slip
-
-
-Time.new.strftime("%d/%m/%Y")
