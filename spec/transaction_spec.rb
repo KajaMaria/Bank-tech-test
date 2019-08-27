@@ -10,5 +10,10 @@ describe Transaction do
       end
     end
 
+    describe "#total date, amount, final balance" do
+      it "should add date, amount, final balance" do
+        expect(transaction.total("27/08/2019","20","20")).to eq(["27/08/2019",20.00,20.00])
+      end
+    end
   end
-end 
+end
